@@ -36,6 +36,7 @@ namespace RefactoringKata
 
         public string GetFormat()
         {
+            ////test
             var products = string.Join(", ", _products.Select(p => p.GetFormat()).ToList());
             return string.Format("{{\"id\": {0}, \"products\": [{1}]}}", id, products);
         }
